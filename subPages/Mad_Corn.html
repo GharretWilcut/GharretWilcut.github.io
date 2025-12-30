@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -226,33 +225,37 @@
                 font-size: 24px;
             }
         }
+        .contact-item {
+            color: #1e8ad6;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
     </style>
 </head>
 <body>
     <a href="../index.html" class="back-button">← Back to Portfolio</a>
 
     <div class="head_text">
-        <h2>Value Investing Score Generator</h2>
+        <h2>Mad Corn Disease</h2>
     </div>
 
     <div class="container">
         <div class="content-section">
             <h3>About the Project</h3>
             <p>
-                I developed this Value Investing Score Generator to assist investors in evaluating stocks based on key financial metrics. The tool calculates a composite score for each stock by analyzing various factors such as price-to-earnings ratio and debt-to-equity ratio. 
-                The goal of the project was to create a systematic approach to identify undervalued stocks that have strong fundamentals, aiding investors in making informed decisions. This project was motivated by my interest in finance and value investing principles. 
-                This project was inspired from my Hagan Scholarship with part of it being to learn about investing and personal finance. 
-                This project was implemented in Python and Jupyter Notebook. Using libraries such as Pandas for data manipulation and yfinance for fetching stock data made the process efficient and streamlined.
-            </p>
-            <p>
-                This was a small project that didn't take that long to make but was intersting to me as I was learning about value investing and wanted to make a tool to help me with stock analysis.
+                This was a group project for my data science class where we used three different machine learning models to predict if a corn plant had one of three diseases based on leaf images. The three diseases we were predicting were Common Rust, Leaf Blight, and Gray Leaf Spot.
+                We used a dataset from Kaggle that had labeled images of corn leaves with these diseases. 
+                We preprocessed the images then used three different models: MobilenetV2, Inception V3, and effecientNetB0. After training and evaluating the models, we found that efficientNetB0 performed the best with an accuracy of around 95% and a nice balance in terms of training speed.
+                
             </p>    
 
             <div class="tech-stack">
                 <span class="tech-tag">Python</span>
                 <span class="tech-tag">Jupyter Notebook</span>
-                <span class="tech-tag">Pandas</span>
-                <span class="tech-tag">Yfinance</span>
+                <span class="tech-tag">TensorFlow</span>
+                <span class="tech-tag">Keras</span>
             </div>
         </div>
 
@@ -283,10 +286,17 @@
         <div class="content-section">
             <h3>Key Features</h3>
             <p>
-                • Implemented a scoring system based on financial metrics to evaluate stock value.<br>
-                • Utilized Python and Jupyter Notebook for data analysis and visualization.<br>
-                • Integrated yfinance library for fetching real-time stock data.<br>
-                • Used Pandas for efficient data manipulation and processing.
+                • Utilized transfer learning with pre-trained models (MobilenetV2, Inception V3, EfficientNetB0) for image classification.<br>
+                • Preprocessed and augmented image data to improve model robustness.<br>
+                • Achieved high accuracy (95%) in disease classification using EfficientNetB0.<br>
+                • Analyzed model performance using confusion matrices.<br>
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h3>Repository link</h3>
+            <p>
+                <a href="https://github.com/GharretWilcut/AlgorithmsHonorsProject_2024" class="contact-item">AlgorithmsHonorsProject_2024</a>
             </p>
         </div>
     </div>
