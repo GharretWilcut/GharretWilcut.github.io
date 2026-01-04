@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HeartBreak Aftermath - Project</title>
+    <title>Printer Driver App - Project</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
         * {
@@ -225,28 +225,39 @@
                 font-size: 24px;
             }
         }
+        .contact-item {
+            color: #1e8ad6;
+            font-size: 18px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
     </style>
 </head>
 <body>
     <a href="../index.html" class="back-button">← Back to Portfolio</a>
 
     <div class="head_text">
-        <h2>HeartBreak Aftermath</h2>
+        <h2>Printer Driver Application</h2>
     </div>
 
     <div class="container">
         <div class="content-section">
             <h3>About the Project</h3>
             <p>
-                This project was made in Godot Engine as a small game for a game jam I participated in. This game was inspired by dome keeper's wave based gameplay but focusing on the combat side of it. The player must defend their heart from incoming enemies by shooting projectiles at them.
-                The game features simple mechanics and progressively challenging waves of enemies.
-                The theme of the game jam was "relationships" and I wanted to create a dome keeper clone so I had to make it fit the theme. The game does have upgrade paths and not much else it was a small game jam project only given a week to complete.
+                This project is an application that adds printer drivers from printer servers to the users computer. This was made in python using the Tkinter library for the GUI.
+                The application pulls all known printers from the selected server and displays them in a list. The user can then select which printers they want to add to their computer.
+                This allows dynamic addition of printers without needing to manually install drivers or go through complex setup processes.
+            </p>
+            <p>
+                This was created as a tool to help streamline the process of adding printers in a corporate environment where users often need access to multiple network printers. It does have multiThreaded
+                capabilities to allow for multiple printers to be added at once without freezing the GUI.
             </p>    
 
             <div class="tech-stack">
-                <span class="tech-tag">Godot</span>
-                <span class="tech-tag">GDScript</span>
-                <span class="tech-tag">Game Development</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Tkinter</span>
+                <span class="tech-tag">Powershell</span>
             </div>
         </div>
 
@@ -277,13 +288,18 @@
         <div class="content-section">
             <h3>Key Features</h3>
             <p>
-                • Wave based enemy spawning system with increasing difficulty.<br>
-                • Simple shooting mechanics allowing the player to defend their heart.<br>
-                • Upgrade paths for player abilities to enhance gameplay.<br>
-                • Implemented using Godot Engine and GDScript for rapid development.<br>
+                • Dynamic Printer Discovery: Automatically fetches available printers from the selected server.
+                • Multi-Threaded Installation: Allows multiple printers to be added simultaneously without freezing the interface.
+                • User-Friendly GUI: Simple and intuitive interface for easy navigation and printer selection.
             </p>
         </div>
 
+        <div class="content-section">
+            <h3>Repository link</h3>
+            <p>
+                <a href="https://github.com/GharretWilcut/AlgorithmsHonorsProject_2024" class="contact-item">AlgorithmsHonorsProject_2024</a>
+            </p>
+        </div>
     </div>
 
     <!-- Lightbox -->
